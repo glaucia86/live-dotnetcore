@@ -27,11 +27,11 @@ Nesse tutorial você será capaz de desenvolver a sua primeira aplicação Web u
 
 ## Vídeos da Live 🎥
 
-* **[Dia 1](https://youtu.be/j4IJQdLxGuM)**
-* **[Dia 2]()**
-* **[Dia 3]()**
-* **[Dia 4]()**
-* **[Dia 5]()**
+* **[Dia 1: Live Coding - Parte I](https://youtu.be/j4IJQdLxGuM)**
+* **[Dia 2: Live Coding - Parte II]()**
+* **[Dia 3: Live Coding - Parte III]()**
+* **[Dia 4: Live Coding - Parte IV]()**
+* **[Dia 5: Live Coding - Parte V]()**
 
 ## Executando a Aplicação Localmente 🔥
 
