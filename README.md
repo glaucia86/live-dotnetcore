@@ -9,10 +9,22 @@ Repositório responsável pelos códigos desenvolvidos durante o Live Coding no 
 ## Recursos Utilizados 🚀
 
 * **[Download .NET Core 3.x](https://aka.ms/AA69ihe)** 
-* **[Visual Studio Code]()** 
+* **[Visual Studio Code](https://aka.ms/AA692ys)** 
 * 
 
-## Executando a Aplicação Localmente ❗️
+## O que eu vou aprender?! 📘
+
+Nesse tutorial você será capaz de desenvolver a sua primeira aplicação Web usando o .NET Core 3.x com Razor Pages. A aplicação consiste num CRUD (Create, Read, Update & Delete).
+
+## Vídeos da Live 🎥
+
+* **[Dia 1]()**
+* **[Dia 2]()**
+* **[Dia 3]()**
+* **[Dia 4]()**
+* **[Dia 5]()**
+
+## Executando a Aplicação Localmente 🔥
 
 **em desenvolvimento**
 
