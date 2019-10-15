@@ -10,7 +10,7 @@ Repositório responsável pelos códigos desenvolvidos durante o Live Coding no 
 
 * **[Download .NET Core 3.x](https://aka.ms/AA69ihe)** 
 * **[Visual Studio Code](https://aka.ms/AA692ys)** 
-* 
+* **[Extensão Vs Code - C# Microsoft](https://aka.ms/AA692zh)** 
 
 ## O que eu vou aprender?! 📘
 
@@ -26,7 +26,13 @@ Nesse tutorial você será capaz de desenvolver a sua primeira aplicação Web u
 
 ## Executando a Aplicação Localmente 🔥
 
-**em desenvolvimento**
+Para executar localmente a aplicação você precisa entrar na pasta `src -> filmeslivecoding` e executar o seguinte comando:
+
+```bash
+> dotnet run
+```
+
+Após isso, você terá que abrir o browser na porta `http://localhost:5001`.
 
 ## Recursos Adicionais & Links Importantes  ⭐️
 
