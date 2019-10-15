@@ -27,7 +27,7 @@ Nesse tutorial você será capaz de desenvolver a sua primeira aplicação Web u
 
 ## Vídeos da Live 🎥
 
-* **[Dia 1]()**
+* **[Dia 1](https://youtu.be/j4IJQdLxGuM)**
 * **[Dia 2]()**
 * **[Dia 3]()**
 * **[Dia 4]()**
@@ -59,7 +59,7 @@ Para que, possamos executar o `Entity Framework` no projeto, se faz necessário 
 
 Durante a live, comento de alguns links e recursos importantes para aprofundar seus conhecimentos sobre .NET Core. São eles:
 
-- ✅ **[]()**
+- ✅ **[Tutorial de .NET Core 3](https://aka.ms/AA69q93)**
 - ✅ **[]()**
 - ✅ **[]()**
 - ✅ **[]()**
