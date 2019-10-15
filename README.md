@@ -1,6 +1,8 @@
 # Live Coding - Semana .NET Core em C# - 14/10 à 18/10
 
-[![net-core.png](https://i.postimg.cc/JhMc1Thw/net-core.png)](https://postimg.cc/pmcnCJ8k)
+<p align="center">
+    <img src="https://i.postimg.cc/JhMc1Thw/net-core.png" />
+</p>
 
 Repositório responsável pelos códigos desenvolvidos durante o Live Coding no **[Twitch]()** e **[Youtube]()** a qual estaremos desenvolvendo alguns projetos em .NET Core 3.x
 
