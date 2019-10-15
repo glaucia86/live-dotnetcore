@@ -16,6 +16,15 @@ Repositório responsável pelos códigos desenvolvidos durante o Live Coding no 
 
 Nesse tutorial você será capaz de desenvolver a sua primeira aplicação Web usando o .NET Core 3.x com Razor Pages. A aplicação consiste num CRUD (Create, Read, Update & Delete).
 
+* **Classe: Filme**
+
+- FilmeId
+- Título
+- Data de Lançamento
+- Gênero
+- Diretor
+- Preço
+
 ## Vídeos da Live 🎥
 
 * **[Dia 1]()**
@@ -33,6 +42,18 @@ Para executar localmente a aplicação você precisa entrar na pasta `src -> fil
 ```
 
 Após isso, você terá que abrir o browser na porta `http://localhost:5001`.
+
+Para que, possamos executar o `Entity Framework` no projeto, se faz necessário executar os seguintes comandos dentro da pasta `src -> filmeslivecoding`
+
+```bash
+> dotnet tool install --global dotnet-ef
+> dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+> dotnet add package Microsoft.EntityFrameworkCore.Design
+> dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+> dotnet restore
+> dotnet ef migrations add InitialCreate
+> dotnet ef database update
+```
 
 ## Recursos Adicionais & Links Importantes  ⭐️
 

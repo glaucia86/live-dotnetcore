@@ -4,9 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using filmeslivecoding.Models;
 using Microsoft.Extensions.Hosting;
 
 namespace filmeslivecoding
@@ -23,7 +26,14 @@ namespace filmeslivecoding
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.Configure<CookiePolicyOptions>(options => {
+              options.CheckConsentNeeded = context => true;
+              options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            // ==> Aqui será adicionado os serviços em relação a conexão com o EF com Context:
+            services.AddDbContext<FilmeContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMvc().AddMvcOptions(opt => opt.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
