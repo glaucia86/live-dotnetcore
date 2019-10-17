@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using filmeslivecoding.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace filmeslivecoding.Pages.Filmes
 {
@@ -19,35 +19,26 @@ namespace filmeslivecoding.Pages.Filmes
             _context = context;
         }
 
-        public SelectList Generos;
-        
         public IList<Filme> Filme { get;set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string BuscaPorFilme { get; set; }
+
+        public SelectList Generos { get; set; }
+        
+        [BindProperty(SupportsGet = true)]
         public string FilmePorGenero { get; set; }
 
-        public async Task OnGetAsync(string buscaPorGeneroNome, string filmePorGenero)
+        public async Task OnGetAsync()
         {
-          #region Lógica inerente a busca de filme por Gênero
-
-          IQueryable<string> queryGenero = from f in _context.Filmes
-                                            orderby f.Genero
-                                            select f.Genero;
-
           var filmes = from f in _context.Filmes
-                        select f; // ==> select * from Filmes
+                        select f;
           
-          if(!String.IsNullOrEmpty(buscaPorGeneroNome))
+          if (!string.IsNullOrEmpty(BuscaPorFilme))
           {
-            filmes = filmes.Where(b => b.Titulo.Contains(buscaPorGeneroNome));
+            filmes = filmes.Where(b => b.Titulo.Contains(BuscaPorFilme));
           }
 
-          if (!String.IsNullOrEmpty(filmePorGenero))
-          {
-            filmes = filmes.Where(b => b.Genero == filmePorGenero);
-          }
-          #endregion
-
-          Generos = new SelectList(await queryGenero.Distinct().ToListAsync());
           Filme = await filmes.ToListAsync();
         }
     }
